@@ -12,10 +12,10 @@ const InstagramSection = () => {
   };
 
   return (
-    <section className="relative bg-scipred overflow-hidden p-20 md:p-20">
+    <section className="relative bg-scipred overflow-hidden md:p-15 py-10">
       {/* Header */}
       <div className="grid grid-cols-1 md:grid-cols-[70%_30%] gap-8 items-center px-20">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 text-justify">
           <h1 className="text-left text-3xl font-inter text-white font-extrabold">
             Follow Us on Instagram
           </h1>
