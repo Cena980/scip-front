@@ -133,12 +133,12 @@ const Home = () => {
               </div>
            </div> 
         </section>
-        {/* Out Corporate Partners */}
+        {/* Our Corporate Partners */}
         <section className="relative bg-white py-20 overflow-hidden">    
           {/* Title */}
           <div className="z-20 mt-5 py-5">
             <h1 className="text-center mx-3 text-3xl sm:text-4xl font-extrabold text-black">
-              Out Corporate Partners
+              Our Corporate Partners
             </h1>
           </div>
           {/* x Section */}
