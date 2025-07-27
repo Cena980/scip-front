@@ -42,7 +42,7 @@ const InstagramSection = () => {
         {/* Left Button */}
         <button
           onClick={scrollLeft}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-md"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 mx-2 rounded-full shadow-md"
         >
           <span className="text-2xl text-scipred">←</span>
         </button>
@@ -50,7 +50,7 @@ const InstagramSection = () => {
         {/* Scrollable Image List */}
         <div
           ref={scrollRef}
-          className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth px-10"
+          className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth px-10 py-5"
         >
           {[
             'https://picsum.photos/id/1015/300/300',
@@ -63,7 +63,7 @@ const InstagramSection = () => {
               key={index}
               src={src}
               alt={`Instagram post ${index + 1}`}
-              className="h-48 w-48 object-cover rounded-lg shadow-md flex-shrink-0"
+              className="h-48 w-48 object-cover rounded-lg shadow-md flex-shrink-0 hover:scale-105 transition-transform duration-300"
             />
           ))}
         </div>
@@ -71,7 +71,7 @@ const InstagramSection = () => {
         {/* Right Button */}
         <button
           onClick={scrollRight}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-md"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 mx-2 rounded-full shadow-md"
         >
           <span className="text-2xl text-scipred">→</span>
         </button>
