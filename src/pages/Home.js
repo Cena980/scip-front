@@ -4,6 +4,7 @@ import demo from '../images/hero1.png'
 import avatar from '../images/avatar.png';
 import VideoSection from '../components/videoPlayer';
 import InstagramSection from '../components/instagramSection';
+import data from '../data/data.json';
 
 const Home = () => {
   return (
@@ -49,6 +50,75 @@ const Home = () => {
                 </p>
               </div>
             ))}
+          </div>
+        </section>
+        {/* Programs SCIP Offers Section */}
+        <section className="bg-[#9D1C45] py-12 px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-white text-3xl text-center font-bold mb-8">{data.homepage.programs.title}</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {data.homepage.programs.items.map((program, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-xl shadow-md p-6 flex items-center gap-4 hover:shadow-lg transition"
+                >
+                  <img
+                    src={program.image}
+                    alt={program.title}
+                    className="w-20 h-20 object-contain rounded-[50%] bg-[#9D1C45]"
+                  />
+                  <div>
+                    <h3 className="text-black font-bold text-lg mb-2">
+                      {program.title}
+                    </h3>
+                    <p className="text-black text-sm">{program.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-8">
+              <a
+                href="#"
+                className="text-white font-semibold flex items-center px-10 justify-end gap-2 hover:underline"
+              >
+                View More <span>→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Partner with SCIP Section */}
+        <section className="relative bg-[#005A81] py-10 overflow-hidden">    
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center sm:items-center relative z-10 px-6">
+            {/* LEft: Image Section */}
+            <div className="w-full md:w-1/2 relative z-10 flex justify-center items-center overflow-hidden rounded-lg min-h-[300px]">
+              <img
+                src={data.homepage.partner.image}
+                alt="Who We look For?"
+                className="absolute p-1 top-1/2 left-1/2 w-auto h-full max-w-full rounded-[25px] object-cover object-center transform -translate-x-1/2 -translate-y-1/2"
+              />
+            </div>
+            {/* Right: Text Section */}
+            <div className="md:w-1/2 z-20 m-1 py-1">
+              <h1 className="text-left mx-3 text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                {data.homepage.partner.title}
+              </h1>
+              <p className="text-justify mb-3 mx-3 px-30 text-center font-medium text-white">
+                {data.homepage.partner.descriptionL1}
+              </p>
+              <p className="text-justify  mb-3 mx-3 px-30 text-center font-medium text-white">
+                {data.homepage.partner.descriptionL2}
+              </p>
+              <p className="text-justify mb-3 mx-3 px-30 text-center font-medium text-white">
+                {data.homepage.partner.descriptionL3}
+              </p>
+              {/* Button */}
+              <div className="justify-start flex flex-wrap gap-4">
+                <button href={data.homepage.partner.buttonLink} className=" transition-colors bg-[#FFFFFF] hover:bg-[#c6c6c6] font-bold my-2 px-6 py-1 rounded-full shadow">
+                  {data.homepage.partner.buttonText}
+                </button>
+              </div>
+            </div>
           </div>
         </section>
         {/* Who We Look For */}

@@ -1,0 +1,38 @@
+{
+"homepage":{
+  "programs": {
+    "title": "Programs SCIP Offers",
+    "items": [
+      {
+        "title": "B2B Apprenticeship",
+        "description": "SCIP’s Business-to-Business Apprenticeship trains students to pitch ideas and gain business skills to work for startups and small businesses.",
+        "image": "/images/b2b.jpg"
+      },
+      {
+        "title": "Annual Executive Summer Leadership Program",
+        "description": "Equips SCIP leaders with mentorship, skills, and hands-on experience in marketing, fundraising, journalism, IT.",
+        "image": "assets/images/summer.jpg"
+      },
+      {
+        "title": "Annual Fellows Leadership Program",
+        "description": "Allows SCIP students to continue training and support events with flexible, mentor-led work focused on communication and time management during Fall/Winter.",
+        "image": "assets/images/fellows.jpg"
+      },
+      {
+        "title": "Annual Golf Leadership Academy",
+        "description": "Trains young leaders’ to develop focus, perseverance, and professionalism for success in Corporate America by playing Golf.",
+        "image": "assets/images/golf.jpg"
+      }
+    ]
+  },
+  "partner": {
+    "title": "Why Partner with SCIP?",
+    "descriptionL1": "We create direct connections between industry leaders and the next generation of innovators.",
+    "descriptionL2": "SCIP connects startups, companies, and entrepreneurs with diverse, high-performing talent worldwide, helping partners solve challenges, spark growth, and expand their global reach.",
+    "descriptionL3": "Partner with SCIP to invest in talent, drive innovation, and shape the future!",
+    "image": "assets/images/partner.jpg",
+    "buttonText": "Become a Partner",
+    "buttonLink": "/partner"
+  }
+}
+}
