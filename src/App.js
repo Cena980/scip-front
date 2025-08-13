@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Programs from './pages/Programs';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/programs" element={<Programs />} />
           </Routes>
         </main>
         <Footer />

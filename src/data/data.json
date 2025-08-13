@@ -1,7 +1,28 @@
 {
+    "navbar": {
+    "items": [
+      {
+        "label": "Get Involved",
+        "link": "/getInvolved"
+      },
+      {
+        "label": "Careers",
+        "link": "/careers"
+      },
+      {
+        "label": "Events",
+        "link": "/events"
+      },
+      {
+        "label": "About",
+        "link": "/about"
+      }
+    ]
+  },
 "homepage":{
   "programs": {
     "title": "Programs SCIP Offers",
+    "link": "/programs",
     "items": [
       {
         "title": "B2B Apprenticeship",

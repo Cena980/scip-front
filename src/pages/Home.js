@@ -60,7 +60,7 @@ const Home = () => {
               {data.homepage.programs.items.map((program, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-xl shadow-md p-6 flex items-center gap-4 hover:shadow-lg transition"
+                  className="bg-white rounded-xl shadow-md p-6 flex items-center gap-4 hover:shadow-lg hover:scale-[1.02] transition-transform duration-300"
                 >
                   <img
                     src={program.image}
@@ -78,7 +78,7 @@ const Home = () => {
             </div>
             <div className="mt-8">
               <a
-                href="#"
+                href={data.homepage.programs.link}
                 className="text-white font-semibold flex items-center px-10 justify-end gap-2 hover:underline"
               >
                 View More <span>→</span>
