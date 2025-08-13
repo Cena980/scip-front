@@ -71,7 +71,7 @@ const Home = () => {
                     <h3 className="text-black font-bold text-lg mb-2">
                       {program.title}
                     </h3>
-                    <p className="text-black text-sm">{program.description}</p>
+                    <p className="text-black text-sm font-semibold">{program.description}</p>
                   </div>
                 </div>
               ))}
